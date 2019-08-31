@@ -1,84 +1,110 @@
 <!DOCTYPE html>
-<html lang="en-us">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Basic Portfolio - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href= "assets/css/style.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/boostrap/css/bootstrap.css">
-</head>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>About Me - Bootstrap</title>
 
-<body background="assets/images/gray_sand.png">
-    <div id="container">
-        <div id="main">
-        
-                <!--The section is for everything in the header-->
-            <header>
-                <div class="head-main">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
 
-                    <div class="head-name">
-                        <h1>Portfolio</h1>
-                    </div>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-        
-                    <ul class="head-menu">
-                        <li class="head-APC"><a href="contact.html">Contact</a></li>
-                        <li class="head-APC"><a href="portfolio.html">Portfolio</a></li>
-                        <li class="head-APC"><a href="index.html">About</a></li>
-                    </ul>
-                </div>
-            <header>
-    
-            <!--The body of the webpage that contains the main contents-->
-            <div class="body-main">
+    <!--Personal CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-                <h2>Portfolio</h2>
-            
-                <div class="Box-Set" id="clearfix">
-                    <div class="Icon-Box">
-                        <img class="Portfolio-Images" src="assets/images/istockphoto-871030872-1024x1024.jpg" alt="Software">
-                        <div class="Portfolio-Title">
-                            <h4>Software</h4>
-                        </div>
-                    </div>
 
-                    <div class="Icon-Box">
-                        <img class="Portfolio-Images" src="assets/images/Web Applications.jpeg" alt="Apps">                 
-                        <div class="Portfolio-Title">
-                            <h4>Applications</h4>
-                        </div>
-                    </div>
-                
-                    <div class="Icon-Box">
-                        <img class="Portfolio-Images" src="assets/images/glenn-carstens-peters-upslash-1600x1065-1500x998.jpg" alt="Video Games">
-                        <div class="Portfolio-Title">
-                            <h4>Video Games</h4>
-                        </div>
-                    </div>    
-            
-                    <div class="Icon-Box">
-                        <img class="Portfolio-Images" src="assets/images/1_pE2fOVDikEUwiQJlh4ggzg.jpeg" alt="Web Development">
-                        <div class="Portfolio-Title">
-                            <h4>Web Development</h4>
-                        </div>
-                    </div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-                    <div class="Icon-Box">
-                        <img class="Portfolio-Images" src="assets/images/1_jfJ1rTZHY16FQ2VofRxrdA.jpeg" alt="Freelance">
-                        <div class="Portfolio-Title">
-                            <h4>Freelance</h4>
-                        </div>
-                    </div>
-                </div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100" background="assets/images/gray_sand.png">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Kioni Pablo</a>  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
-        </div>
-    </div>
-    
-    <!--This is the footer of the webpage-->
-    <footer id="footer">
-        <h3>Copyright ©</h3>  
-    </footer>
-</body>
+        </nav>
+    </header>
 
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+    <div id="main-container" class="container">
+        <section class="main-section">
+        <h1>Portfolio</h1>
+
+        <div class="work">
+            <img class="Portfolio-Photo" src="assets/images/istockphoto-871030872-1024x1024.jpg" alt="Software">
+        
+            <h3>Software</h3>
+        </div>
+        <div class="work">
+            <img class="Portfolio-Photo" src="assets/images/Web Applications.jpeg" alt="Applications">
+        
+            <h3>Applications</h3>
+        </div>
+        <div class="work">
+            <img class="Portfolio-Photo"src="assets/images/glenn-carstens-peters-upslash-1600x1065-1500x998.jpg" alt="Video Games">
+        
+            <h3>Video Games</h3>
+        </div>
+        <div class="work">
+            <img class="Portfolio-Photo"src="assets/images/1_pE2fOVDikEUwiQJlh4ggzg.jpeg" alt="Web Development">
+        
+            <h3>Web Development</h3>
+        </div>
+        <div class="work">
+            <img class="Portfolio-Photo" src="assets/images/1_jfJ1rTZHY16FQ2VofRxrdA.jpeg" alt="Freelance">
+        
+            <h3>Freelance</h3>
+        
+        </section>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text"></span>Copyright &COPY;</span>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
 </html>
